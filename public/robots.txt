@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://defaultprivacy.com/
+
+# Sitemaps
+Sitemap: https://defaultprivacy.com/sitemap.xml

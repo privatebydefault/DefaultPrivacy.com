@@ -1,0 +1,270 @@
+// create global css variable for header height
+:root {
+  --header-height: 80px;
+}
+
+// section style
+.section {
+  @apply pb-24 xl:pb-36;
+
+  &-sm {
+    @apply pb-16 xl:pb-20;
+  }
+}
+
+// section wrapper style
+.section-wrapper {
+  @apply flex flex-col gap-16 lg:gap-[5.25rem];
+
+  > .section-intro {
+    .title {
+      @apply text-h3 lg:text-h2-sm xl:text-h2 mb-4;
+    }
+
+    .subtitle {
+      @apply text-lg text-text;
+    }
+  }
+
+  > .section-content {
+    @apply mb-0;
+  }
+}
+
+// form style
+.form-input {
+  @apply w-full rounded border-transparent bg-theme-light px-6 py-4 text-light placeholder:text-text/50 focus:border-primary focus:ring-transparent;
+}
+
+.form-label {
+  @apply mb-2 block font-primary text-lg font-normal text-text;
+}
+
+// social icons
+.social-icons {
+  @apply space-x-4;
+
+  li {
+    @apply inline-block;
+
+    a {
+      @apply flex h-9 w-9 items-center justify-center rounded bg-body border border-primary hover:bg-primary text-center leading-9 text-white;
+
+      svg {
+        @apply h-5 w-5;
+      }
+    }
+  }
+}
+
+// notice
+.notice {
+  @apply mb-6 rounded-lg border px-8 py-6;
+
+  &-head {
+    @apply flex items-center;
+
+    svg {
+      @apply mr-3;
+    }
+
+    p {
+      @apply font-primary text-xl font-semibold text-text;
+    }
+  }
+
+  &-body {
+    @apply mt-3;
+
+    p {
+      @apply my-0;
+    }
+  }
+
+  &.note {
+    @apply text-[#1B83E2] border-current;
+  }
+
+  &.tip {
+    @apply text-[#40D294] border-current;
+  }
+
+  &.info {
+    @apply text-[#E3A72C] border-current;
+  }
+
+  &.warning {
+    @apply text-[#DB2C23] border-current;
+  }
+}
+
+// swiper pagination
+.swiper-pagination {
+  @apply mt-9 flex items-center justify-center space-x-2 text-center;
+
+  &-bullet {
+    @apply h-2.5 w-2.5 rounded-full bg-theme-light opacity-100;
+
+    &-active {
+      @apply h-4 w-4 bg-primary;
+    }
+  }
+}
+
+// tab
+.tab {
+  @apply overflow-hidden rounded-lg border border-border;
+
+  &-nav {
+    @apply flex border-b border-border bg-theme-light m-0 list-none;
+
+    &-item {
+      @apply cursor-pointer border-b-[3px] border-border py-2 text-lg text-text opacity-80 my-0 px-8;
+
+      &.active {
+        @apply border-b-[3px] border-dark opacity-100;
+      }
+    }
+  }
+
+  &-content {
+    @apply px-5;
+
+    &-panel {
+      @apply p-8;
+
+      p {
+        @apply mb-0;
+      }
+
+      &.active {
+        @apply block;
+      }
+    }
+  }
+}
+
+// accordion
+.accordion {
+  @apply mb-6 overflow-hidden rounded-lg border border-border bg-theme-light;
+
+  &-header {
+    @apply flex w-full cursor-pointer items-center justify-between px-8 py-4 text-lg text-text;
+  }
+
+  &-icon {
+    @apply h-[.8em] w-[.8em] rotate-[-90deg] transition-transform duration-200;
+  }
+
+  &-content {
+    @apply max-h-0 overflow-hidden px-8 py-0;
+  }
+
+  &.active {
+    .accordion-icon {
+      @apply rotate-0;
+    }
+
+    .accordion-content {
+      @apply max-h-screen;
+    }
+  }
+}
+
+// modal
+.modal {
+  @apply fixed inset-0 z-40 hidden h-full w-full overflow-auto;
+
+  &-overlay {
+    @apply fixed inset-0 z-40 hidden h-full w-full bg-black bg-opacity-40;
+  }
+
+  &-content {
+    @apply relative top-1/2 z-50 mx-auto max-w-[90%] -translate-y-1/2 rounded-lg bg-body p-8;
+  }
+
+  &-close {
+    @apply absolute right-3 top-3 h-8 w-8 rounded-full bg-theme-light text-center leading-8 text-text;
+  }
+}
+
+// content style
+.content {
+  @apply prose max-w-none;
+  @apply prose-headings:mb-[.3em] prose-headings:mt-[.6em] prose-headings:text-text;
+  @apply prose-h1:text-h1-sm md:prose-h1:text-h1;
+  @apply prose-h2:text-h2-sm md:prose-h2:text-h2;
+  @apply prose-h3:text-h3-sm md:prose-h3:text-h3;
+  @apply prose-img:max-w-full prose-img:rounded;
+  @apply prose-hr:border-border;
+  @apply prose-p:text-base prose-p:text-text;
+  @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-theme-light prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-primary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-text;
+  @apply prose-pre:rounded-lg prose-pre:bg-theme-light;
+  @apply prose-code:px-1 prose-code:text-primary;
+  @apply prose-strong:text-text;
+  @apply prose-a:text-text prose-a:underline hover:prose-a:text-primary;
+  @apply prose-li:text-text;
+  @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:content-[""];
+  @apply prose-thead:border-border prose-thead:bg-theme-light;
+  @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-text;
+  @apply prose-tr:border-border;
+  @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px];
+}
+
+// Heading Text Gradient Color
+.gradient-text {
+  --text-gradient: linear-gradient(180deg, theme("colors.white"), #b6b6b6);
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  padding: 24px 24px 24px 0;
+  position: relative;
+}
+
+// change bg-primary,bg-secondary,bg-tertiary nth-childs of tags that loops through the tags
+.tags > li {
+  @apply border-secondary/60;
+
+  &::marker {
+    @apply text-primary;
+  }
+
+  &:nth-child(2n) {
+    @apply border-secondary/60;
+
+    &::marker {
+      @apply text-secondary;
+    }
+  }
+}
+
+.footer_link {
+  @apply text-text hover:text-primary;
+}
+
+// scroll-to-top
+.scroll-to-top {
+  @apply invisible fixed bottom-0 right-2 z-50 h-10 w-10 content-center items-center rounded border-0 bg-gradient-to-r from-primary to-secondary text-white opacity-0 outline-none transition-all sm:right-5 hover:scale-105;
+
+  &.show {
+    @apply visible bottom-5 opacity-100;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: theme("colors.theme-light");
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/20;
+  border-radius: 0px;
+}

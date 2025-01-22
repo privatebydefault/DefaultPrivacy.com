@@ -1,0 +1,84 @@
+{
+  "main": [
+    {
+      "name": "About",
+      "url": "/about"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Categories",
+      "url": "/categories"
+    }
+  ],
+  "footer": {
+    "column_1": {
+      "title": "Hosted On",
+      "external_link": true,
+      "items": [
+        {
+          "name": "TOR",
+          "url": "http://7li3uuiyu35chwinebaupvnqgx6vyknqeacjv3uipjwb5nmvgu2z47id.onion/"
+        },
+        {
+          "name": "IPFS",
+          "url": "#"
+        },
+        {
+          "name": "I2P",
+          "url": "#"
+        },
+        {
+          "name": "ZeroNet",
+          "url": "#"
+        }
+      ]
+    },
+    "column_2": {
+      "title": "Legal",
+      "external_link": false,
+      "items": [
+        {
+          "name": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "name": "Terms and Conditions",
+          "url": "/terms-and-conditions"
+        },
+        {
+          "name": "Affiliate Disclosure",
+          "url": "/affiliate"
+        }
+      ]
+    },
+    "column_3": {
+      "title": "Company",
+      "external_link": false,
+      "items": [
+        {
+          "name": "About",
+          "url": "/about"
+        },
+        {
+          "name": "Contact",
+          "url": "/contact"
+        },
+        {
+          "name": "Donate",
+          "url": "/donate"
+        },
+        {
+          "name": "Manifesto",
+          "url": "/manifesto"
+        },
+        {
+          "name": "Submission",
+          "url": "/submission"
+        }
+      ]
+    }
+  }
+}

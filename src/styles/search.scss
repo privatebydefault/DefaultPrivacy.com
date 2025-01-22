@@ -1,0 +1,96 @@
+.search {
+  &-modal {
+    @apply z-50 fixed top-0 left-0 w-full h-full flex items-start justify-center invisible opacity-0 overflow-hidden;
+    &.show {
+      @apply visible opacity-100;
+    }
+    &-overlay {
+      @apply fixed top-0 left-0 w-full h-full bg-black opacity-50;
+    }
+  }
+  &-wrapper {
+    @apply bg-theme-light w-[1024px] max-w-[96%] mt-24 rounded-lg shadow-lg relative z-10;
+    &-header {
+      @apply p-4 relative;
+      &-input {
+        @apply border border-solid w-full focus:ring-0 focus:border-primary border-border/40 rounded-md h-12 pr-4 pl-12 transition duration-200 outline-none bg-theme-light;
+      }
+    }
+    &-body {
+      @apply max-h-[calc(100vh-250px)] overflow-y-auto bg-theme-light  p-4 rounded-lg;
+    }
+    &-footer {
+      @apply text-xs select-none leading-none md:flex items-center px-3.5 py-2 hidden;
+      kbd {
+        @apply bg-theme-light  text-xs leading-none text-center mr-[3px] px-1 py-0.5 rounded-[3px];
+      }
+      span:not(:last-child) {
+        @apply mr-4;
+      }
+      span:last-child {
+        @apply ml-auto;
+      }
+    }
+  }
+  &-result {
+    &-empty {
+      @apply text-center cursor-text select-none px-0 pt-8 pb-16;
+    }
+    &-group {
+      @apply mb-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-2;
+      &-title {
+        @apply text-lg text-text  mb-[5px] px-3;
+      }
+    }
+    &-item {
+      @apply rounded border bg-theme-light flex flex-col items-start mb-1 p-4 scroll-my-[30px] border-solid border-border/20 relative;
+      mark {
+        @apply bg-secondary rounded-[2px];
+      }
+      &-title {
+        @apply text-lg font-bold text-text  leading-none;
+      }
+      &-link::after {
+        @apply absolute top-0 right-0 bottom-0 left-0 z-10 content-[""];
+      }
+      &-image {
+        @apply shrink-0 w-full mb-4;
+        img {
+          @apply w-full rounded-[4px] object-cover aspect-video;
+        }
+      }
+      &-description {
+        @apply text-sm line-clamp-2 mt-1;
+      }
+      &-content {
+        @apply mx-0 my-1.5 empty:hidden line-clamp-1;
+      }
+      &-taxonomies {
+        @apply text-sm flex flex-wrap gap-1 items-center text-light mt-4;
+        svg {
+          @apply inline-block mr-1;
+        }
+      }
+
+      &-active,
+      &:focus,
+      &:hover {
+        @apply bg-dark border-primary;
+        .search-result-item {
+          &-title {
+            @apply text-primary;
+          }
+          &-description {
+            @apply text-text/95;
+          }
+          &-content {
+            @apply text-text/95;
+          }
+          &-taxonomies {
+            @apply text-text/95;
+          }
+        }
+      }
+    }
+  }
+}

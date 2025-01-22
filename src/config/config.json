@@ -1,0 +1,44 @@
+{
+  "site": {
+    "title": "Default Privacy",
+    "base_url": "https://defaultprivacy.com/",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "225",
+    "logo_height": "52",
+    "logo_text": "Default Privacy"
+  },
+
+  "settings": {
+    "search": true,
+    "sticky_header": true,
+    "scroll_to_top": true,
+    "pagination": 8,
+    "summary_length": 200,
+    "blog_folder": "blog",
+    "resources_folder": "resources",
+    "categories_folder": "categories"
+  },
+
+  "params": {
+    "contact_form_action": "https://formsubmit.co/bb395a04456193dfc224188d5b7ef184",
+    "submission_email": "bb395a04456193dfc224188d5b7ef184",
+    "contact_email": "bb395a04456193dfc224188d5b7ef184",
+    "footer_description": "Free, open-source privacy resource center.",
+    "copyright": "Your privacy is protected by our very own <u><a href=\"https://github.com/privatebydefault/Default-License-v1?tab=License-1-ov-file#readme\" rel=\"noopener noreferrer\">Default License 1.0</a></u> – Use it on your own projects!"
+    },
+
+  "navigation_button": {
+    "enable": true,
+    "label": "Submit",
+    "link": "/submission"
+  },
+
+  "metadata": {
+    "meta_author": "Default Privacy",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Unlock the power of anonymity. Private by default solutions for those who dare to be free."
+  }
+}
