@@ -1,7 +1,7 @@
 {
   "sites": [
     {
-      "slug": "full-guitar-petite",
+      "slug": "defaultprivacy",
       "distDir": "out",
       "buildCommand": "yarn install && yarn build"
     }
