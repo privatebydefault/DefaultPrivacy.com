@@ -84,7 +84,7 @@ We will not change our policy of no data collection, and we will continue to pri
 
 **15. Contact Information**
 
-If you have any questions or concerns about this policy, please contact us at https://defaultprivacy.com/contact. We are committed to transparency and user control, and we want to hear from you.
+If you have any questions or concerns about this policy, please contact us at https://defaultprivacy.com/contact/. We are committed to transparency and user control, and we want to hear from you.
 
 **Glossary**
 
