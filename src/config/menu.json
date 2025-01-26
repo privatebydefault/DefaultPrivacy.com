@@ -19,19 +19,27 @@
       "external_link": true,
       "items": [
         {
-          "name": "TOR",
-          "url": "http://7li3uuiyu35chwinebaupvnqgx6vyknqeacjv3uipjwb5nmvgu2z47id.onion/"
+          "name": "Github",
+          "url": "https://github.com/privatebydefault/DefaultPrivacy.com"
+        },
+        {
+          "name": "Fleek",
+          "url": "https://fleek.xyz/"
         },
         {
           "name": "IPFS",
+          "url": "https://bafybeigry5rfadpwgaxaybjzkzz676bng5t7f5t7vd4xm7peyxkqespliy.ipfs.dweb.link/"
+        },
+        {
+          "name": "TOR: Soon",
           "url": "#"
         },
         {
-          "name": "I2P",
+          "name": "DERO: Soon",
           "url": "#"
         },
         {
-          "name": "ZeroNet",
+          "name": "I2P: Soon",
           "url": "#"
         }
       ]
