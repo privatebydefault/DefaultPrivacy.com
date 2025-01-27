@@ -1,4 +1,4 @@
-name: Deploy to IPFS and Tor
+name: Deploy site via Fleek and VPS
 
 on:
   push:
