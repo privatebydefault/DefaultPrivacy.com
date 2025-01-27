@@ -54,7 +54,7 @@ jobs:
             sudo -l
 
       - name: Deploy to VPS
-        uses: appleboy/scp-action@v0.3.0
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
