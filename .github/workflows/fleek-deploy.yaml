@@ -1,20 +1,14 @@
-name: Deploy site via Fleek and VPS
-
-on:
-  push:
-    branches:
-      - main
-
+name: Deploy site via Fleek
+on: push
 jobs:
-  deploy:
+  deploy-to-fleek:
     runs-on: ubuntu-latest
     env:
       FLEEK_TOKEN: ${{ secrets.FLEEK_TOKEN }}
       FLEEK_PROJECT_ID: ${{ secrets.FLEEK_PROJECT_ID }}
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
-
       - name: Cache node modules
         uses: actions/cache@v4
         with:
@@ -25,50 +19,13 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
-
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-
       - name: Install Fleek CLI
-        run: npm install -g @fleek-platform/cli
-
+        run: npm i -g @fleek-platform/cli
       - name: Install Packages
         run: npm install -g yarn && yarn install
-
-      - name: Build & deploy to Fleek
+      - name: Build & deploy sites
         run: fleek sites deploy
-
-      - name: Test SSH Connection
-        uses: appleboy/ssh-action@v0.1.7
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USERNAME }}
-          key: ${{ secrets.VPS_PRIVATE_KEY }}
-          port: ${{ secrets.VPS_PORT }}
-          script: |
-            echo "SSH connection successful"
-            whoami
-            groups
-            sudo -l
-
-      - name: Deploy to VPS
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USERNAME }}
-          key: ${{ secrets.VPS_PRIVATE_KEY }}
-          port: ${{ secrets.VPS_PORT }}
-          source: "."
-          target: "/var/www/html"
-
-      - name: Restart Caddy on VPS
-        uses: appleboy/ssh-action@v0.1.8
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USERNAME }}
-          key: ${{ secrets.VPS_PRIVATE_KEY }}
-          port: ${{ secrets.VPS_PORT }}
-          script: |
-            sudo systemctl restart caddy
