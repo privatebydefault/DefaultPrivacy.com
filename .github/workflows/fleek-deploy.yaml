@@ -60,7 +60,7 @@ jobs:
 
       # Restart Caddy on VPS
       - name: Restart Caddy
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v2
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
@@ -68,4 +68,26 @@ jobs:
           passphrase: ${{ secrets.VPS_PASSPHRASE }}
           port: ${{ secrets.VPS_PORT }}
           script: |
+            echo "Current User: $(whoami)"
+            echo "Sudo Access: $(sudo -l)"
+            echo "Restarting Caddy..."
             sudo systemctl restart caddy
+          command_timeout: 10m
+
+      # Debug SSH Connection
+      - name: Debug SSH Connection
+        uses: appleboy/ssh-action@v2
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_PRIVATE_KEY }}
+          passphrase: ${{ secrets.VPS_PASSPHRASE }}
+          port: ${{ secrets.VPS_PORT }}
+          script: |
+            whoami
+            id -u
+            echo "Testing sudo access..."
+            sudo -l
+            echo "Check if systemctl is accessible..."
+            which systemctl
+          command_timeout: 2m
