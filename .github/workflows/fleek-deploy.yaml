@@ -60,5 +60,4 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           script: |
             sudo /usr/bin/systemctl restart caddy
-          pty: true
           command_timeout: 1m
