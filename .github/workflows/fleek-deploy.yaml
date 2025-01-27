@@ -43,10 +43,6 @@ jobs:
       - name: Install Packages
         run: npm install -g yarn && yarn install
 
-      # Build the site
-      - name: Build
-        run: yarn build
-
       # Deploy to IPFS
       - name: Deploy to IPFS
         run: fleek sites deploy
