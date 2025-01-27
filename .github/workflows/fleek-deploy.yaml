@@ -60,7 +60,7 @@ jobs:
 
       # Restart Caddy on VPS
       - name: Restart Caddy
-        uses: appleboy/ssh-action@v2
+        uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
@@ -68,6 +68,7 @@ jobs:
           passphrase: ${{ secrets.VPS_PASSPHRASE }}
           port: ${{ secrets.VPS_PORT }}
           script: |
+            set -x
             echo "Current User: $(whoami)"
             echo "Sudo Access: $(sudo -l)"
             echo "Restarting Caddy..."
