@@ -1,14 +1,21 @@
-name: Deploy site via Fleek
+name: Deploy site via Fleek and VPS
+
 on: push
+
 jobs:
-  deploy-to-fleek:
+  deploy:
     runs-on: ubuntu-latest
     env:
       FLEEK_TOKEN: ${{ secrets.FLEEK_TOKEN }}
       FLEEK_PROJECT_ID: ${{ secrets.FLEEK_PROJECT_ID }}
+      VPS_HOST: ${{ secrets.VPS_HOST }}
+      VPS_USERNAME: ${{ secrets.VPS_USERNAME }}
+      VPS_PRIVATE_KEY: ${{ secrets.VPS_PRIVATE_KEY }}
+      VPS_PORT: ${{ secrets.VPS_PORT }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Cache node modules
         uses: actions/cache@v4
         with:
@@ -19,13 +26,38 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
+
       - name: Install Fleek CLI
         run: npm i -g @fleek-platform/cli
+
       - name: Install Packages
         run: npm install -g yarn && yarn install
+
       - name: Build & deploy sites
         run: fleek sites deploy
+
+      - name: Copy files to VPS
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_PRIVATE_KEY }}
+          port: ${{ secrets.VPS_PORT }}
+          source: "."
+          target: "/var/www/html"
+
+      - name: Restart Caddy on VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_PRIVATE_KEY }}
+          port: ${{ secrets.VPS_PORT }}
+          script: |
+            sudo /usr/bin/systemctl restart caddy
+          command_timeout: 1m
