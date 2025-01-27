@@ -50,6 +50,7 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           source: "."
           target: "/var/www/html"
+          rm: true
 
       - name: Restart Caddy on VPS
         uses: appleboy/ssh-action@master
