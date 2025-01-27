@@ -1,23 +1,14 @@
-name: Deploy to IPFS and Tor
-
-on:
-  push:
-    branches:
-      - main
-
+name: Deploy site via Fleek
+on: push
 jobs:
-  deploy:
+  deploy-to-fleek:
     runs-on: ubuntu-latest
     env:
       FLEEK_TOKEN: ${{ secrets.FLEEK_TOKEN }}
       FLEEK_PROJECT_ID: ${{ secrets.FLEEK_PROJECT_ID }}
-
     steps:
-      # Checkout code
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
-
-      # Cache node modules
       - name: Cache node modules
         uses: actions/cache@v4
         with:
@@ -28,68 +19,13 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
-
-      # Install Node.js
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
-
-      # Install Fleek CLI
       - name: Install Fleek CLI
         run: npm i -g @fleek-platform/cli
-
-      # Install Packages
       - name: Install Packages
         run: npm install -g yarn && yarn install
-
-      # Deploy to IPFS
-      - name: Deploy to IPFS
+      - name: Build & deploy sites
         run: fleek sites deploy
-
-      # Deploy to VPS via SCP
-      - name: Deploy to VPS
-        uses: appleboy/scp-action@v1
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USERNAME }}
-          key: ${{ secrets.VPS_PRIVATE_KEY }}
-          port: ${{ secrets.VPS_PORT }}
-          source: "out"
-          target: "/var/www/html/out"
-
-      # Restart Caddy on VPS
-      - name: Restart Caddy
-        uses: appleboy/ssh-action@v1.8.0
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USERNAME }}
-          key: ${{ secrets.VPS_PRIVATE_KEY }}
-          passphrase: ${{ secrets.VPS_PASSPHRASE }}
-          port: ${{ secrets.VPS_PORT }}
-          script: |
-            set -x
-            echo "Current User: $(whoami)"
-            echo "Sudo Access: $(sudo -l)"
-            echo "Restarting Caddy..."
-            sudo systemctl restart caddy
-          command_timeout: 10m
-
-      # Debug SSH Connection
-      - name: Debug SSH Connection
-        uses: appleboy/ssh-action@v1.8.0
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USERNAME }}
-          key: ${{ secrets.VPS_PRIVATE_KEY }}
-          passphrase: ${{ secrets.VPS_PASSPHRASE }}
-          port: ${{ secrets.VPS_PORT }}
-          script: |
-            set -x
-            whoami
-            id -u
-            echo "Testing sudo access..."
-            sudo -l
-            echo "Check if systemctl is accessible..."
-            which systemctl
-          command_timeout: 2m
