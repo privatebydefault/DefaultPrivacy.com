@@ -41,7 +41,7 @@ jobs:
         run: fleek sites deploy
 
       - name: Test SSH Connection
-        uses: appleboy/ssh-action@v0.1.8
+        uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
