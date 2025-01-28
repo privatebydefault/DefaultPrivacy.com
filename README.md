@@ -14,7 +14,7 @@ We're revolutionizing the status quo by creating new, privacy-first standards. W
 
 By contributing to our directory, you can help us build a more comprehensive and useful resource for the community. Before you submit, review our guidelines for a smooth process.
 
-- [Submit Your Resource](https://defaultprivacy.com/submission)
+- [Submit Your Resource](https://defaultprivacy.com/submission.html)
 
 ## Contribution Guidelines
 
@@ -24,4 +24,4 @@ By contributing to our directory, you can help us build a more comprehensive and
 
 ## Feedback
 
-We value your feedback and are always looking for ways to improve Default Privacy. Whether you have suggestions for new features, improvements to existing resources, or general comments, please don't hesitate to [reach out](https://defaultprivacy.com/contact). Your input is crucial in making Default Privacy the ultimate resource for digital freedom!
+We value your feedback and are always looking for ways to improve Default Privacy. Whether you have suggestions for new features, improvements to existing resources, or general comments, please don't hesitate to [reach out](https://defaultprivacy.com/contact.html). Your input is crucial in making Default Privacy the ultimate resource for digital freedom!
