@@ -27,19 +27,11 @@
           "url": "https://fleek.xyz/"
         },
         {
-          "name": "IPFS",
-          "url": "https://bafybeigry5rfadpwgaxaybjzkzz676bng5t7f5t7vd4xm7peyxkqespliy.ipfs.dweb.link/"
-        },
-        {
           "name": "TOR",
           "url": "http://fjz75ennaltycu6pd7mud3sujk4c2j6d5q7f4eha6ni3tn2lhjfrp4qd.onion/"
         },
         {
           "name": "DERO: Soon",
-          "url": "#"
-        },
-        {
-          "name": "I2P: Soon",
           "url": "#"
         }
       ]

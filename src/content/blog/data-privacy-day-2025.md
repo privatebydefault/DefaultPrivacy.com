@@ -2,9 +2,9 @@
 title: "Happy Data Privacy Day 2025"
 meta_title: "Celebrate Data Privacy Day with DefaultPrivacy.com"
 description: "Learn about the importance of data privacy and how to protect your online presence. Discover new tools and resources to help you take control of your data."
-date: 2025-01-28T05:00:00Z
+date: 2025-01-28T00:00:00Z
 image: "/images/blog/data-privacy-day.png"
-draft: true
+draft: false
 ---
 
 As we celebrate this important day, we're excited to announce the launch of our new website, DefaultPrivacy.com. Our mission is to empower individuals and organizations to take control of their online presence and protect their data.
