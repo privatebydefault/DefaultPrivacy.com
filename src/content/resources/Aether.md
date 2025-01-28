@@ -7,7 +7,7 @@ featured: false
 affiliated: false
 draft: false
 
-externalURL: https://getaether.net/
+externalURL: https://aether.app/
 category: "Alternatives"
 tags: ["Social Media"]
 ---
