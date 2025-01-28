@@ -1,5 +1,5 @@
 ---
-title: Privacy Phone Shop
+title: Private Phone Shop
 description: Your phone, your data, your control. No tracking or spying.
 image: ""
 date: 2024-09-04T05:00:00Z

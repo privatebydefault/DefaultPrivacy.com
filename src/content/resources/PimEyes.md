@@ -1,13 +1,13 @@
 ---
 title: PimEyes
-description: Now you can exercise your legal privacy rights in one step via Global Privacy Control (GPC).
+description: With PimEye’s you can hide your existing photos from being showed on the public search results page.
 image: ""
 date: 2024-09-04T05:00:00Z
 featured: false
 affiliated: false
 draft: false
 
-externalURL: https://globalprivacycontrol.org/
+externalURL: https://pimeyes.com/en
 category: "Identity and Anonymity"
 tags: ["Opt-Out Tools"]
 ---
