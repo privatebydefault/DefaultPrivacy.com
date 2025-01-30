@@ -3,7 +3,7 @@ title: Impreza
 description: Dedicated Tor servers, no KYC, fast hosting, private payments, easy setup.
 image: ""
 date: 2024-09-04T05:00:00Z
-featured: false
+featured: true
 affiliated: true
 draft: false
 
