@@ -1,6 +1,6 @@
 ---
 title: Fito Track
-description:  A privacy oriented fitness tracker for Android. It is open-source and completely ad-free.
+description: A privacy oriented fitness tracker for Android. It is open-source and completely ad-free.
 image: ""
 date: 
 featured: false

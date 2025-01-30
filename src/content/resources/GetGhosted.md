@@ -1,5 +1,5 @@
 ---
-title: PrivacyX
+title: Get Ghosted
 description: We build you a custom Ghost Life or turn your business into a Ghosted structure.
 image: ""
 date: 2024-09-04T05:00:00Z
@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://getghosted.org/
 category: "Identity and Anonymity"
-tags: ["Channels"]
+tags: ["Privacy Consultation"]
 ---

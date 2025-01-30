@@ -1,6 +1,6 @@
 ---
 title: Userbase
-description: Embrace absolute privacy and unparalleled flexibility with our cryptocurrency-friendly VPS hosting.
+description: Userbase lets you create and manage user accounts and data persistence for your static web app without a backend.
 image: ""
 date: 
 featured: false
