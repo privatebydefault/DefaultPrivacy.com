@@ -47,8 +47,8 @@ jobs:
           key: ${{ secrets.VPS_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            # Force-clear directory as current user
-            rm -rf /var/www/html/{*,.*} || true
+            # Safely remove only files we own
+            find /var/www/html -user $USER -exec rm -rf {} \; || true
             mkdir -p /var/www/html
           command_timeout: 2m
 
@@ -61,7 +61,7 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           source: "out/"
           target: "/var/www/html"
-          overwrite: true
+          rm: true
           strip_components: 0
 
       - name: Restart Caddy on VPS
