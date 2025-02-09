@@ -39,7 +39,6 @@ jobs:
       - name: Build Project
         run: yarn build
 
-      # Clean VPS directory before copy
       - name: Clean VPS directory
         uses: appleboy/ssh-action@master
         with:
@@ -48,11 +47,10 @@ jobs:
           key: ${{ secrets.VPS_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            sudo rm -rf /var/www/html/*
-            sudo mkdir -p /var/www/html
+            rm -rf /var/www/html/*
+            mkdir -p /var/www/html
           command_timeout: 1m
 
-      # Deploy built files
       - name: Deploy to VPS
         uses: appleboy/scp-action@master
         with:
@@ -60,15 +58,14 @@ jobs:
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.VPS_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
-          source: "out/"  # Update this to your actual build directory
+          source: "out/"
           target: "/var/www/html"
 
-      # Restart web server
       - name: Restart Caddy on VPS
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USERNAME }}
+          username: caddy_restart  # Match your sudoers user
           key: ${{ secrets.VPS_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
