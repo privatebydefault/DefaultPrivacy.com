@@ -13,6 +13,7 @@ jobs:
       VPS_USERNAME: ${{ secrets.VPS_USERNAME }}
       VPS_PRIVATE_KEY: ${{ secrets.VPS_PRIVATE_KEY }}
       VPS_PORT: ${{ secrets.VPS_PORT }}
+      CADDY_USER: ${{ secrets.CADDY_USER }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -39,6 +40,19 @@ jobs:
       - name: Build Project
         run: yarn build
 
+      - name: Debug VPS Connection
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_PRIVATE_KEY }}
+          port: ${{ secrets.VPS_PORT }}
+          script: |
+            whoami
+            ls -ld /var/www/html
+            sudo -l -U ${{ secrets.VPS_USERNAME }}
+          command_timeout: 1m
+
       - name: Clean VPS directory
         uses: appleboy/ssh-action@master
         with:
@@ -47,8 +61,8 @@ jobs:
           key: ${{ secrets.VPS_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            sudo rm -rf /var/www/html/*
-            sudo mkdir -p /var/www/html
+            echo "" | sudo -S rm -rf /var/www/html/*
+            echo "" | sudo -S mkdir -p /var/www/html
           command_timeout: 1m
 
       - name: Deploy to VPS
@@ -66,9 +80,9 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
-          username: caddy_restart  # Use the user with sudo privileges for Caddy
+          username: ${{ secrets.CADDY_USER }}
           key: ${{ secrets.VPS_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            sudo /usr/bin/systemctl restart caddy
+            echo "" | sudo -S /usr/bin/systemctl restart caddy
           command_timeout: 1m
