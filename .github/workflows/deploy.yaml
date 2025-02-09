@@ -1,6 +1,9 @@
 name: Deploy to VPS
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -12,20 +15,32 @@ jobs:
       VPS_PORT: ${{ secrets.VPS_PORT }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Copy files to VPS
-        uses: appleboy/scp-action@master
+      - name: Cache node modules
+        uses: actions/cache@v4
         with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USERNAME }}
-          key: ${{ secrets.VPS_PRIVATE_KEY }}
-          port: ${{ secrets.VPS_PORT }}
-          source: "."
-          target: "/var/www/html"
-          rm: true
+          path: |
+            ~/.npm
+            ~/.yarn
+            ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
 
-      - name: Install, build and restart Caddy
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Packages
+        run: npm install -g yarn && yarn install
+
+      - name: Build Project
+        run: yarn build
+
+      # Clean VPS directory before copy
+      - name: Clean VPS directory
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VPS_HOST }}
@@ -33,8 +48,29 @@ jobs:
           key: ${{ secrets.VPS_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            cd /var/www/html
-            yarn install
-            yarn build
+            sudo rm -rf /var/www/html/*
+            sudo mkdir -p /var/www/html
+          command_timeout: 1m
+
+      # Deploy built files
+      - name: Deploy to VPS
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_PRIVATE_KEY }}
+          port: ${{ secrets.VPS_PORT }}
+          source: "out/"  # Update this to your actual build directory
+          target: "/var/www/html"
+
+      # Restart web server
+      - name: Restart Caddy on VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_PRIVATE_KEY }}
+          port: ${{ secrets.VPS_PORT }}
+          script: |
             sudo /usr/bin/systemctl restart caddy
-          command_timeout: 5m
+          command_timeout: 1m
