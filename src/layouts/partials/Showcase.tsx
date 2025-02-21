@@ -29,7 +29,7 @@ const Showcase: React.FC<{
         >
           <div className="grid grid-cols-1 gap-6 px-10 py-8 ">
             <div className="flex items-center justify-between">
-              <h2 className="text-h4">Popular Resources</h2>
+              <h2 className="text-h4">Resources</h2>
               <Sortby />
             </div>
 
