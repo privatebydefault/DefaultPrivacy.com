@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://obscureiq.com/
 category: "Open Source Intelligence"
-tags: ["Open Source Intelligence, Privacy Consultation, Data Broker Redaction"]
+tags: ["Open Source Intelligence"]
 ---
