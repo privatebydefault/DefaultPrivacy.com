@@ -4,10 +4,10 @@ description: Shield your financial information and protect against fraud with se
 image: ""
 date: 2024-12-04T05:00:00Z
 featured: true
-affiliated: true
+affiliated: false
 draft: false
 
-externalURL: https://app.privacy.com/join/M8YKR
+externalURL: https://privacy.com
 category: "Secure Payments"
 tags: ["Virtual Payment Cards"]
 ---

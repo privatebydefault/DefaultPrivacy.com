@@ -2,12 +2,12 @@
 title: ObscureIQ
 description: Audit your online presence. Wipe your digital footprint. Breath easier.
 image: ""
-date: 2024-09-04T05:00:00Z
-featured: false
+date: 2025-03-02T05:00:00Z
+featured: true
 affiliated: false
 draft: false
 
 externalURL: https://obscureiq.com/
-category: "Identity and Anonymity"
-tags: ["Privacy Consultation"]
+category: "Open Source Intelligence"
+tags: ["Open Source Intelligence, Privacy Consultation, Data Broker Redaction"]
 ---
