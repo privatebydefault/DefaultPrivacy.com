@@ -4,7 +4,7 @@ const config = require("./src/config/config.json");
 const nextConfig = {
   reactStrictMode: true,
   basePath: config.base_path !== "/" ? config.base_path : "",
-  trailingSlash: false,
+  trailingSlash: true,
   output: 'export',
   images: {
     unoptimized: true,
