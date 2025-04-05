@@ -15,6 +15,8 @@ jobs:
       VPS_PORT: ${{ secrets.VPS_PORT }}
       CADDY_USER: ${{ secrets.CADDY_USER }}
       CADDY_PRIVATE_KEY: ${{ secrets.CADDY_PRIVATE_KEY }}
+      NEXT_PUBLIC_FATHOM_ID: ${{ secrets.NEXT_PUBLIC_FATHOM_ID }} # Add this line
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
