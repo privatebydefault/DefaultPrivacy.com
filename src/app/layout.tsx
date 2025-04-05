@@ -8,6 +8,7 @@ import Header from "@/partials/Header";
 import Providers from "@/partials/Providers";
 import SidebarDrawerMenu from "@/partials/SidebarDrawerMenu";
 import "@/styles/main.scss";
+import { FathomAnalytics } from './fathom';
 
 export default function RootLayout({
   children,
@@ -60,7 +61,8 @@ export default function RootLayout({
         <Providers>
           <SidebarDrawerMenu />
           <Header />
-          <main>{children}</main>
+          <main>{children}<FathomAnalytics />
+          </main>
           {config.settings.scroll_to_top && <ScrollTop />}
           <Footer />
         </Providers>

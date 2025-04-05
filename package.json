@@ -26,6 +26,7 @@
     "@next/env": "15.1.5",
     "@next/eslint-plugin-next": "15.1.5",
     "date-fns": "^4.1.0",
+    "fathom-client": "^3.7.2",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
     "marked": "^15.0.4",
