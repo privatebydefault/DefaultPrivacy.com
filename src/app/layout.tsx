@@ -15,21 +15,22 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // import google font css
+  // Import Google Font CSS
   const pf = theme.fonts.font_family.primary;
 
   return (
     <html suppressHydrationWarning={true} lang="en">
       <head>
-        {/* responsive meta */}
+        {/* Responsive Meta */}
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
 
-        {/* favicon */}
+        {/* Favicon */}
         <link rel="shortcut icon" href={config.site.favicon} />
-        {/* theme meta */}
+
+        {/* Theme Meta */}
         <meta name="theme-name" content="nextplate" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
@@ -43,7 +44,7 @@ export default function RootLayout({
           content="#000"
         />
 
-        {/* google font css */}
+        {/* Google Font CSS */}
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
@@ -61,7 +62,9 @@ export default function RootLayout({
         <Providers>
           <SidebarDrawerMenu />
           <Header />
-          <main>{children}<FathomAnalytics />
+          <main>
+            {children}
+            <FathomAnalytics />
           </main>
           {config.settings.scroll_to_top && <ScrollTop />}
           <Footer />

@@ -1,7 +1,7 @@
 'use client';
 
 import { load, trackPageview } from 'fathom-client';
-import { useEffect, Suspense } from 'react';
+import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 
 function TrackPageView() {
@@ -9,16 +9,32 @@ function TrackPageView() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    load(process.env.NEXT_PUBLIC_FATHOM_ID!, {
+    const fathomId = process.env.NEXT_PUBLIC_FATHOM_ID;
+    
+    if (!fathomId) {
+      console.error('Fathom ID is not defined in environment variables.');
+      return;
+    }
+
+    load(fathomId, {
       auto: false
     });
-  }, []);
+
+    // Initial page view tracking when the component mounts
+    if (pathname) {
+      trackPageview({
+        url: `${pathname}${searchParams?.toString()}`,
+        referrer: document.referrer
+      });
+    }
+  }, [pathname, searchParams]); // Include pathname and searchParams in the dependency array
 
   useEffect(() => {
+    // Track page views on subsequent route changes
     if (!pathname) return;
 
     trackPageview({
-      url: pathname + searchParams?.toString(),
+      url: `${pathname}${searchParams?.toString()}`,
       referrer: document.referrer
     });
   }, [pathname, searchParams]);
@@ -28,8 +44,6 @@ function TrackPageView() {
 
 export function FathomAnalytics() {
   return (
-    <Suspense fallback={null}>
-      <TrackPageView />
-    </Suspense>
+    <TrackPageView /> // Removed Suspense as it's not strictly necessary for this use case
   );
 }
