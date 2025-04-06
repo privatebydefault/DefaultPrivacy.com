@@ -1,107 +1,74 @@
 ---
 title: "Default Privacy Policy"
-meta_title: "Default Privacy Policy - Setting a New Standard for User Privacy"
-description: "Discover how we're redefining the standard for user privacy and security. Read our transparent and user-friendly privacy policy to learn more about our commitment to protecting your data and maintaining your anonymity."
+meta_title: "Default Privacy Policy"
+description: "Read our transparent and user-friendly privacy policy to learn more about our commitment to protecting your data and maintaining your anonymity."
 draft: false
 ---
+**Privacy Policy**  
+**Effective Date**: April 6th, 2025 | **Last Updated**: April 6th, 2025 
 
-**Effective Date: January 01, 2025**
+**Privacy in a Nutshell**
 
-**Summary of Key Points**
+We prioritize your privacy and strive to be transparent about our service. Here's the short version:
 
-We prioritize your privacy and security. Here's what you need to know:
+* We minimize data collection and don't store personally identifiable user data.
+* We use Fathom Analytics, a privacy-first website analytics software, to understand our website traffic in a way that respects your digital privacy.
+* You can use tools like ad blockers or disable JavaScript to limit tracking, and we respect your right to do so.
+* We're committed to transparency about our service and policies.
 
-We don't collect or store any user data. Our service is designed to be private from the ground up, so you can use it without worrying about your data being compromised.
+---
 
-You have complete control over your experience with our service. We don't share any information with third parties, and we provide clear and transparent information about our service.
+### **1. Privacy by Default – Our Commitment to You**  
+We're committed to making privacy the standard, not the exception. That's why we've made sure that our service is private by default, with no need to adjust settings or take extra steps to protect your information.  
 
-**Table of Contents**
+---
 
-1. Introduction
-2. Principles
-3. Private by Default
-4. No Data Collection
-5. No Tracking or Profiling
-6. Privacy by Design
-7. User Control
-8. No Data Sharing
-9. No Data Storage
-10. No Exploitation
-11. No Backdoors
-12. Transparency
-13. Links to Other Websites
-14. Changes to this Policy
-15. Contact Information
+### **2. What We Don’t Do:**  
+- **No cookies, no trackers, no behavioral profiling.**  
+- **No selling, trading, or renting your data.**  
+- **No mandatory accounts or personal info required.**  
 
-**1. Introduction**
+---
 
-This Privacy Policy ("Policy") outlines how we collect, use, disclose, and protect personal data when you use our service. By using our service, you agree to the terms of this Policy.
+### **3. What We Do (Minimally):**  
+We want to process as little personal information as possible when you use our website. That's why we've chosen Fathom Analytics for our website analytics, which doesn't use cookies and complies with the GDPR, ePrivacy (including PECR), COPPA, and CCPA. Using this privacy-friendly website analytics software, your IP address is only briefly processed, and we (running this website) have no way of identifying you. As per the CCPA, your personal information is de-identified. You can read more about this on Fathom Analytics' website.
 
-**2. Principles**
+The purpose of us using this software is to understand our website traffic in the most privacy-friendly way possible so that we can continually improve our website and business. The lawful basis as per the GDPR is "Article 6(1)(f); where our legitimate interests are to improve our website and business continually." As per the explanation, no personal data is stored over time.
 
-Our commitment to privacy and ethical use is guided by the principles outlined in the [DEFAULT LICENSE v1](https://github.com/privatebydefault/Default-License-v1), including transparency, no exploitation, no backdoors, and data minimization.
+---
 
-**3. Private by Default – Our Commitment to You**
+### **4. Your Rights (Non-Negotiable):**  
+- **Erase your data**: Send a request to [insert email]. We’ll delete everything *except* anti-spam/security logs.  
+- **Opt-out instantly**: Close your browser or stop using our site.  
 
-We're committed to making privacy the standard, not the exception. That's why we've made sure that our service is private by default, with no need to adjust settings or take extra steps to protect your information.
+---
 
-**4. No Data Collection**
+### **5. Security & Compliance:**  
+- **Encrypted end-to-end**: All data is scrambled, even from us.  
+- **Regular audits**: Infrastructure is stress-tested for vulnerabilities.  
+- **Complies with**: GDPR, ePrivacy (PECR), COPPA, CCPA, and global privacy laws.  
 
-We do not collect or store any user data. We do not require users to provide any personal information to use our service, and we do not store any data that could be used to identify or track individuals.
+---
 
-**5. No Tracking or Profiling**
+### **6. Disclaimers (Read This):**  
+- **Third-party links**: We vet tools for privacy, but their policies are their own.  
+- **No liability**: Our content is for education only. Consult experts for legal/security needs.  
 
-We do not use cookies, tracking pixels, or other technologies to track or profile users. We do not share any information with third parties, and we do not engage in any form of data mining or analytics.
+---
 
-**6. Privacy by Design**
+### **7. Changes to This Policy:**  
+We’ll post updates here. If we ever betray this manifesto, *burn us to the ground*.  
 
-We've designed our service to be private from the ground up. Our service doesn't store any identifying information about your device, such as your IP address or user agent.
+---
 
-**7. User Control**
+### **Contact Us (Stay Anonymous):**  
+**Email**: https://DefaultPrivacy.com/contact
 
-Users have complete control over their experience with our service. We do not collect or store any user data, and users can use our service without providing any personal information.
+**GitHub**: https://github.com/privatebydefault/DefaultPrivacy.com
 
-**8. No Data Sharing**
+---
 
-We do not share any information with third parties, including advertisers, data brokers, or law enforcement agencies. Our commitment to user privacy and security is absolute, and we will not compromise our values under any circumstances.
+### **Defending Your Digital Freedom:**  
+Privacy is a right. Privacy is normal. We must defend our own privacy if we expect to have any.
 
-**9. No Data Storage**
-
-We do not store any user data, including text documents, images, or other files. Any data uploaded to our service is not transmitted to or stored on our servers.
-
-**10. No Exploitation**
-
-We prohibit the malicious use, exploitation, or sale of user data without consent. We will take appropriate actions to address any misuse or unauthorized access to user data.
-
-**11. No Backdoors**
-
-We do not create or distribute backdoors or security vulnerabilities in our service. We prioritize the security and integrity of our service, and we conduct periodic security reviews and assessments to identify and address potential security issues.
-
-**12. Transparency**
-
-We provide clear and transparent information about our service, including its source code and changes. This includes maintaining a publicly accessible repository with a changelog that details all modifications and improvements.
-
-**13. Links to Other Websites**
-
-Our service may include links to other websites or applications. Please note that these websites have their own privacy policies and practices, and we are not responsible for their content or actions. We encourage you to review the privacy policies of any website you visit before using their services.
-
-**14. Changes to this Policy**
-
-We will not change our policy of no data collection, and we will continue to prioritize user privacy and security. If we make any changes to this policy, we will notify users promptly and transparently.
-
-**15. Contact Information**
-
-If you have any questions or concerns about this policy, please contact us at https://defaultprivacy.com/contact. We are committed to transparency and user control, and we want to hear from you.
-
-**Glossary**
-
-* **Backdoor**: A secret entry point in a computer system or software that allows unauthorized access.
-* **Cookie**: A small text file stored on a user's device that contains information about their interactions with a website or service.
-* **Data minimization**: The practice of collecting and processing only the minimum amount of data necessary to achieve a specific purpose.
-* **Exploitation**: The act of taking advantage of a vulnerability or weakness in a system or software for malicious purposes.
-* **IP address**: A unique numerical address assigned to a device on a network that allows it to communicate with other devices.
-* **Open-source**: Software that is released under a license that allows users to view, modify, and distribute the source code.
-* **Personal data**: Any information that can be used to identify or track an individual, such as name, email address, or phone number.
-* **Security vulnerability**: A weakness or flaw in a system or software that can be exploited by an attacker to gain unauthorized access or cause harm.
-* **Tracking pixel**: A small image or code snippet used to track user behavior or interactions with a website or service.
-* **User agent**: A string of text that identifies the device and browser used to access a website or service.
+**Stay invisible. Stay free.**  
