@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://exifcleaner.com/
 category: "Data Privacy"
-tags: ["Disk Cleaners"]
+tags: ["Metadata Removal"]
 ---
