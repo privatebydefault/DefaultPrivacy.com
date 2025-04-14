@@ -10,21 +10,5 @@ draft: false  # no need to change
 
 externalURL: https://example.com  # Resource URL
 category: "Category" # Choose from the list of categories
-- "Alternatives"
-- "Browser Privacy"
-- "Data Privacy"
-- "Email"
-- "Hardware"
-- "Identity and Anonymity"
-- "Mobile"
-- "Network Privacy"
-- "Open Source Intelligence"
-- "Policy and Advocacy"
-- "Productivity and Work"
-- "Protection"
-- "Resources"
-- "Secure Payments"
-- "Web Services"
-
 tags: ["Browser Privacy", "Protection"] # Add tags that describe the resource
 ---

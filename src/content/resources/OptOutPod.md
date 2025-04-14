@@ -2,7 +2,7 @@
 title: Opt Out
 description: A podcast about personal privacy and data sovereignty, featuring interviews with experts and advocates.
 image: ""
-date: 2025-28-28T05:00:00Z
+date: 2025-01-28T05:00:00Z
 featured: false
 affiliated: false
 draft: false
