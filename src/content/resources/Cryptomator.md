@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://cryptomator.org/
 category: "Data Privacy"
-tags: ["File and Disk Encryption"]
+tags: ["File Encryption"]
 ---

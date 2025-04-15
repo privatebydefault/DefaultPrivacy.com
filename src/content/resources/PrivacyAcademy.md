@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://privacyacademy.com/
 category: "Resources"
-tags: ["Online Courses and Training"]
+tags: ["Online Courses"]
 ---

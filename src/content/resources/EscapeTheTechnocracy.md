@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://escapethetechnocracy.com/?coupon-code=DEFAULTPRIVACY&sc-page=digitalprivacy
 category: "Resources"
-tags: ["Online Courses and Training"]
+tags: ["Online Courses"]
 ---

@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://www.beeper.com/
 category: "Mobile"
-tags: ["Encrypted Messengers"]
+tags: ["Messaging"]
 ---

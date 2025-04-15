@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://getsession.org/
 category: "Mobile"
-tags: ["Encrypted Messengers"]
+tags: ["Messaging"]
 ---

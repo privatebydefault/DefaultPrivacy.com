@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://grapheneos.org/
 category: "Mobile"
-tags: ["Mobile Operating Systems"]
+tags: ["Mobile OS"]
 ---

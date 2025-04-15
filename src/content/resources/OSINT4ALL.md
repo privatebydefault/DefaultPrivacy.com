@@ -8,6 +8,6 @@ affiliated: false
 draft: false
 
 externalURL: https://start.me/p/L1rEYQ/osint4all
-category: "Open Source Intelligence"
-tags: ["Open Source Intelligence"]
+category: "OSINT"
+tags: ["OSINT"]
 ---

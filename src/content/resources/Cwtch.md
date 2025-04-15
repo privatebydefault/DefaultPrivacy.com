@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://cwtch.im/
 category: "Mobile"
-tags: ["Encrypted Messengers"]
+tags: ["Massaging"]
 ---

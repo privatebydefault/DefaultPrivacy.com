@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://element.io/
 category: "Mobile"
-tags: ["Encrypted Messengers"]
+tags: ["Messaging"]
 ---

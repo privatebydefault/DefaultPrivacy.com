@@ -10,5 +10,5 @@ draft: false
 
 externalURL: https://www.7-zip.org/
 category: "Data Privacy"
-tags: ["File and Disk Encryption"]
+tags: ["File Encryption"]
 ---

@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://1984.hosting/
 category: "Web Services"
-tags: ["Web Hosting Providers"]
+tags: ["Web Hosting"]
 ---

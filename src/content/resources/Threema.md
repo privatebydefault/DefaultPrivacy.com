@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://threema.ch/en
 category: "Mobile"
-tags: ["Encrypted Messengers"]
+tags: ["Messaging"]
 ---

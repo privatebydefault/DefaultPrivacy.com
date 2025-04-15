@@ -8,6 +8,6 @@ affiliated: false
 draft: false
 
 externalURL: https://map.malfrats.industries/
-category: "Open Source Intelligence"
-tags: ["Open Source Intelligence"]
+category: "OSINT"
+tags: ["OSINT"]
 ---

@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://noyb.eu/en
 category: "Policy and Advocacy"
-tags: ["Privacy Advocacy Groups"]
+tags: ["Advocacy Groups"]
 ---

@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://cyber.harvard.edu/topics/privacy-security
 category: "Policy and Advocacy"
-tags: ["Policy and Research Bodies"]
+tags: ["Policy and Research"]
 ---

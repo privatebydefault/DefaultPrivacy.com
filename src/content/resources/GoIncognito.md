@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://www.techlore.tech/goincognito
 category: "Resources"
-tags: ["Online Courses and Training"]
+tags: ["Online Courses"]
 ---

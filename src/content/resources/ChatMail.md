@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://www.myntex.com/chatmail
 category: "Mobile"
-tags: ["Encrypted Messengers"]
+tags: ["Massaging"]
 ---

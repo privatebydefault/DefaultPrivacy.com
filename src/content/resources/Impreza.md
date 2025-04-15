@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://portal.imprezahost.com/aff.php?aff=253
 category: "Web Services"
-tags: ["Web Hosting Providers"]
+tags: ["Web Hosting"]
 ---

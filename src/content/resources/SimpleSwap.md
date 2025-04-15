@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://simpleswap.io/
 category: "Secure Payments"
-tags: ["Decentralized Exchanges"]
+tags: ["DEXs"]
 ---

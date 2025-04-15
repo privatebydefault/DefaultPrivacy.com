@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://glacier.chat/altos
 category: "Mobile"
-tags: ["Mobile Operating Systems"]
+tags: ["Mobile OS"]
 ---

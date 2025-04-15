@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://cdt.org/area-of-focus/privacy-data/
 category: "Policy and Advocacy"
-tags: ["Policy and Research Bodies"]
+tags: ["Policy and Research"]
 ---

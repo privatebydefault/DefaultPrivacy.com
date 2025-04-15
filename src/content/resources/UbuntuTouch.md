@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://ubuntu-touch.io/
 category: "Mobile"
-tags: ["Mobile Operating Systems"]
+tags: ["Mobile OS"]
 ---

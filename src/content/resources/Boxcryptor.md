@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://www.boxcryptor.com/
 category: "Data Privacy"
-tags: ["File and Disk Encryption"]
+tags: ["File Encryption"]
 ---

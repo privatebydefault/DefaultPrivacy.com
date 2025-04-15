@@ -8,6 +8,6 @@ affiliated: false
 draft: false
 
 externalURL: https://obscureiq.com/
-category: "Open Source Intelligence"
-tags: ["Open Source Intelligence"]
+category: "OSINT"
+tags: ["OSINT"]
 ---

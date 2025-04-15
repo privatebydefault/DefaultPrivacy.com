@@ -8,6 +8,6 @@ affiliated: false
 draft: false
 
 externalURL: https://axisvero.com/
-category: "Open Source Intelligence"
+category: "OSINT"
 tags: ["Private Investigators"]
 ---

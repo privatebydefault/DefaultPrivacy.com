@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://bisq.network/
 category: "Secure Payments"
-tags: ["Decentralized Exchanges"]
+tags: ["DEXs"]
 ---

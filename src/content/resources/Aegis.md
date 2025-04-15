@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://getaegis.app/
 category: "Identity and Anonymity"
-tags: ["Two Factor Authentication"]
+tags: ["2FA"]
 ---

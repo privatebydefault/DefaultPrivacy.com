@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://lineageos.org/
 category: "Mobile"
-tags: ["Mobile Operating Systems"]
+tags: ["Mobile OS"]
 ---

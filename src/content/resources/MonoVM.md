@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://monovm.com/vps-server/monero/
 category: "Web Services"
-tags: ["Web Hosting Providers"]
+tags: ["Web Hosting"]
 ---

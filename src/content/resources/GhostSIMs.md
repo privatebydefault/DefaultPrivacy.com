@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://ghostsims.com/
 category: "Mobile"
-tags: ["Anonymous SIM Cards"]
+tags: ["SIM Cards"]
 ---

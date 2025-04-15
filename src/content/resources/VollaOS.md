@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://volla.online/en/index.html
 category: "Mobile"
-tags: ["Mobile Operating Systems"]
+tags: ["Mobile OS"]
 ---

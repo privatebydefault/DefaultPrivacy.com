@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://silent.link/
 category: "Mobile"
-tags: ["Anonymous SIM Cards"]
+tags: ["SIM Cards"]
 ---

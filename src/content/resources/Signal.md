@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://signal.org/
 category: "Mobile"
-tags: ["Encrypted Messengers"]
+tags: ["Messaging"]
 ---

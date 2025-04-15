@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://hodlhodl.com/
 category: "Secure Payments"
-tags: ["Decentralized Exchanges"]
+tags: ["DEXs"]
 ---

@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://www.e.foundation/
 category: "Mobile"
-tags: ["Mobile Operating Systems"]
+tags: ["Mobile OS"]
 ---

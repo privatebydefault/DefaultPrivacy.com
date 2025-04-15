@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://flokinet.is/shared-hosting
 category: "Web Services"
-tags: ["Web Hosting Providers"]
+tags: ["Web Hosting"]
 ---

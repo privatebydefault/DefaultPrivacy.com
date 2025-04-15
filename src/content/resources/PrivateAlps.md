@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://privatealps.net/en
 category: "Web Services"
-tags: ["Web Hosting Providers"]
+tags: ["Web Hosting"]
 ---

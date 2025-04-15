@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://complianz.io/
 category: "Policy and Advocacy"
-tags: ["Privacy Advocacy Groups"]
+tags: ["Advocacy Groups"]
 ---

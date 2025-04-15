@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://www.veracrypt.fr/
 category: "Data Privacy"
-tags: ["File and Disk Encryption"]
+tags: ["File Encryption"]
 ---

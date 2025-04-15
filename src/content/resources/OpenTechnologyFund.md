@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://www.opentech.fund/
 category: "Policy and Advocacy"
-tags: ["Policy and Research Bodies"]
+tags: ["Policy and Research"]
 ---

@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://orangewebsite.com/hosting/offshore-hosting
 category: "Web Services"
-tags: ["Web Hosting Providers"]
+tags: ["Web Hosting"]
 ---

@@ -8,6 +8,6 @@ affiliated: false
 draft: false
 
 externalURL: https://www.myosint.training/
-category: "Open Source Intelligence"
-tags: ["Open Source Intelligence"]
+category: "OSINT"
+tags: ["OSINT"]
 ---

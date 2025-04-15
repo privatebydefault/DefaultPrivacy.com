@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://xmpp.org/
 category: "Mobile"
-tags: ["Encrypted Messengers"]
+tags: ["Messaging"]
 ---

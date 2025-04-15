@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://basicswapdex.com/
 category: "Secure Payments"
-tags: ["Decentralized Exchanges"]
+tags: ["DEXs"]
 ---

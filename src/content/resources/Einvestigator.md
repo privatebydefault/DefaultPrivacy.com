@@ -8,6 +8,6 @@ affiliated: false
 draft: false
 
 externalURL: https://www.einvestigator.com/
-category: "Open Source Intelligence"
+category: "OSINT"
 tags: ["Private Investigators"]
 ---

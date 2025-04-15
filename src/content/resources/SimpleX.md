@@ -9,5 +9,5 @@ draft: false
 
 externalURL: https://simplex.chat/
 category: "Mobile"
-tags: ["Encrypted Messengers"]
+tags: ["Messaging"]
 ---
